@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en" data-theme="default" data-density="comfy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>Kelli's AZ Trip · May 9–15, 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=2" />
+
+  <meta name="ext-resource-dependency" content="https://images.unsplash.com/photo-1583729476095-82e61108a043?q=80&w=2814&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-resource-id="heroImg" />
+  <meta name="ext-resource-dependency" content="https://muralsyourway.vtexassets.com/arquivos/ids/241224-825-auto?width=825&height=auto&aspect=true" data-resource-id="day1Img" />
+  <meta name="ext-resource-dependency" content="https://blooloop.com/media-library/wizard-of-oz-sphere.jpg?id=61222080&width=2000&height=1500&coordinates=110%2C0%2C111%2C0" data-resource-id="day2Img" />
+  <meta name="ext-resource-dependency" content="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80" data-resource-id="day3Img" />
+  <meta name="ext-resource-dependency" content="https://images.unsplash.com/photo-1601841117015-4d5c1704767c?q=80&w=2232&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-resource-id="day4Img" />
+  <meta name="ext-resource-dependency" content="https://images.unsplash.com/photo-1534868489953-ef37c20abb25?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW50ZWxvcGUlMjBjYW55b258ZW58MHx8MHx8fDA%3D" data-resource-id="day5ImgA" />
+  <meta name="ext-resource-dependency" content="https://www.nps.gov/common/uploads/grid_builder/pefo/crop16_9/1BD2DF18-0286-9A0A-28FFA8A04B28B665.jpg?width=1300&quality=90&mode=crop" data-resource-id="day5ImgB" />
+  <meta name="ext-resource-dependency" content="https://outboundhotels.com/wp-content/uploads/2025/08/Outbounder-Blog-Sedona-Stargazing.jpg" data-resource-id="day6Img" />
+  <meta name="ext-resource-dependency" content="https://t3.ftcdn.net/jpg/01/11/22/44/360_F_111224494_Vcl3eafzhx6Uc5GulbI2rk0eAOq0np59.jpg" data-resource-id="day7Img" />
+
+  <template id="__bundler_thumbnail" data-bg-color="#fdf2e9">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <rect width="1200" height="800" fill="#fdf2e9"/>
+      <g transform="translate(600 480)">
+        <polygon points="-280,80 -180,-80 -100,30 -20,-110 80,40 180,-60 280,80" fill="#E8742C"/>
+        <polygon points="-280,80 -180,-20 -100,60 -20,-30 80,80 180,10 280,80" fill="#c25617" opacity="0.85"/>
+        <circle cx="160" cy="-180" r="55" fill="#fbbf24"/>
+      </g>
+      <text x="600" y="240" font-family="Georgia, serif" font-style="italic" font-size="84" text-anchor="middle" fill="#2d1810">Arizona</text>
+    </svg>
+  </template>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    window.TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
+      "theme": "default",
+      "density": "comfy",
+      "imagery": true
+    }/*EDITMODE-END*/;
+  </script>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script>
+/* Trip data — all content for Kelli's AZ Trip site */
+
+window.TRIP_DATA = {
+  meta: {
+    startDate: "2026-05-09",
+    endDate: "2026-05-15",
+    travelers: ["Kelli", "Sarah", "Lizzie", "Mom", "Dad"],
+  },
+
+  hero: {
+    eyebrow: "May 9–15, 2026 · A family trip",
+    title: { line1: "Sedona", em: "Arizona" },
+    sub: "Five travelers. One week. Las Vegas, Zion, Sedona, Page, Flagstaff — and a sky so full of stars it felt like a dare.",
+    chips: ["5 travelers", "🥾 Sisters hike", "👴👵 Parents explore", "🌿 Vegetarian", "🌌 Stargazing", "🏛️ Ancient ruins", "💧 Swimming"],
+    image: window.__resources.heroImg,
+    credit: "Cathedral Rock, Sedona",
+  },
+
+  rules: "Sedona hits 90–95°F. Sisters on trail by 8:00–8:30 AM. Carry 2L+ water. Grand Canyon rim is 7,000 ft — bring a layer. Stargazing nights drop to ~50°F. Trail runners or hiking boots only.",
+
+  packing: [
+    ["Daypack", "Lightweight, room for snacks + layers"],
+    ["Hiking shoes / trail runners", "Good grip — no sandals"],
+    ["Wool socks", "Bring extras"],
+    ["Hydration", "2L+ per person per hike"],
+    ["AllTrails app", "Download offline maps"],
+    ["Headlamp", "Cathedral Rock sunset return"],
+    ["Trekking poles", "Optional, helpful Soldier Pass"],
+    ["Sunscreen + SPF Chapstick", "Reapply every 2 hrs"],
+    ["Wide-brim hat + sunglasses", "Non-negotiable"],
+    ["Light jacket", "Canyon shade + evenings"],
+    ["Breathable layers", "30–40°F swing dawn to noon"],
+    ["Mini first aid kit", "Tweezers, blister care"],
+    ["Snacks", "Trail mix, bars, fruit"],
+    ["Swimsuit + water shoes", "Grasshopper + Crescent Moon"],
+    ["Warm jacket — stargazing", "Drops to 50°F at night"],
+    ["America the Beautiful Pass", "$80 — buy before leaving"],
+  ],
+
+  prologue: {
+    eyebrow: "Prologue",
+    title: "The Journey",
+    paragraphs: [
+      "It started the way most things worth doing start — casually, without warning, with no real plan to follow through.",
+      "Kelli said she was going to Arizona. Just like that. Not an invitation exactly — more of an announcement. The kind you make when you half-expect everyone to politely decline and go back to their lives.",
+      "They didn't decline.",
+      "Months of planning followed — spreadsheets, bookings, seventeen versions of the same itinerary — but none of that is the point. The point is that one offhand sentence from one person lit the whole thing up.",
+      "That's usually how it goes with family. You don't decide to show up for each other. You just do.",
+    ],
+    closer: "Mom, Dad, Sarah, Kelli, and Lizzie. Red rock country, one week in May. There are worse ways to spend a life.",
+    sig: "May 9–15, 2026 · Las Vegas · Zion · Sedona · Page · Flagstaff",
+  },
+
+  epilogue: {
+    eyebrow: "Epilogue",
+    title: "Until the next one…",
+    paragraphs: [
+      "There's a thing that happens at the end of a trip like this. You're tired in the good way — the kind that lives in your legs and your eyes, not your spirit. You've seen things you can't quite describe to people who weren't there.",
+      "The way the canyon walls turned red at four in the afternoon. The cold shock of a creek in May. A sky so full of stars it felt like a dare.",
+      "You don't take a trip like this to escape your life. You take it to remember what your life is made of.",
+      "Family is a strange and stubborn thing. It survives distance and silence and all the ordinary ways people drift apart. And then someone says <em>I'm going to Arizona, anyone want to come?</em> — and just like that, you're all together again, standing on the edge of something enormous, laughing about nothing, alive in the best possible way.",
+      "That's the whole point. Not the hikes or the sunsets or the ancient walls. Those are just the backdrop. The point is the five of you, out in the world, choosing to be there together.",
+    ],
+    closer: "Here's to more of it.",
+    sig: "May 9–15, 2026 · Las Vegas · Zion · Sedona · Page · Flagstaff",
+  },
+
+  // Stylized route map nodes — coords on a 1000x440 viewBox
+  route: [
+    { id: "lv", name: "Las Vegas",   sub: "Day 1 · Day 7", x: 90,  y: 230 },
+    { id: "zion", name: "Zion",      sub: "Day 2",         x: 240, y: 130 },
+    { id: "page", name: "Page",      sub: "Day 5",         x: 510, y: 90  },
+    { id: "flag", name: "Flagstaff", sub: "Day 7",         x: 660, y: 220 },
+    { id: "sedona", name: "Sedona",  sub: "Days 3–6",      x: 600, y: 300 },
+    { id: "gc", name: "Grand Canyon",sub: "Day 3 (en route)", x: 470, y: 200 },
+  ],
+  routePath: "M 90 230 Q 165 150 240 130 Q 320 130 470 200 Q 510 145 510 90 Q 580 100 660 220 Q 640 270 600 300 Q 480 320 470 200 Q 380 240 240 130 Q 165 195 90 230",
+
+  days: [
+    {
+      num: "01", title: "Las Vegas Arrival",
+      date: "Saturday, May 9", assignment: "All 5 together",
+      weather: { city: "Las Vegas, NV", icon: "☀️", hi: 86, lo: 64, desc: "Sunny · Clear evening" },
+      image: window.__resources.day1Img,
+      caption: "Las Vegas · Arrival",
+      events: [
+        { time: "✈️ Everyone", title: "Fly in · Check into Hilton Elara", body: "Easy first evening on the Strip. Only night all five are together in LV — no agenda, just relax and reconnect." },
+        { time: "🍽️ Dinner", title: "Strip dinner — your call", tone: "dark", body: "Walk from the Elara. Keep it simple and fun." },
+        { time: "🚗 Sisters · 8:00 PM LV", title: "Drive to Springdale, Utah (~2.5 hrs)", tone: "dark", body: "Check into Best Western Plus Zion Canyon Inn. Straight to bed — 6:30 AM trailhead tomorrow is the one non-negotiable early morning of the trip." },
+      ],
+    },
+    {
+      num: "02", title: "Zion National Park + Las Vegas",
+      date: "Sunday, May 10", assignment: "Sisters hike · Parents relax LV",
+      weather: { city: "Zion / Springdale, UT", icon: "🌤️", hi: 78, lo: 52, desc: "Mostly sunny · Cool morning" },
+      image: window.__resources.day2Img,
+      caption: "Zion Canyon",
+      events: [
+        { row: [
+          { time: "🥾 Sisters · 6:30 AM", title: "Canyon Overlook Trail", stats: "1 mi RT · Easy · No permit", body: "East of Zion-Mt. Carmel Tunnel. Best panoramic views with far fewer crowds. The park's sleeper hit." },
+          { time: "🥾 Sisters · ~8:30 AM", title: "Riverside Walk", stats: "2.2 mi RT · Paved · Easy", body: "Follows the Virgin River into The Narrows. Stop at the water's edge." },
+        ]},
+        { time: "👴👵 Parents", title: "Relaxed LV morning", tone: "par", body: "Pool, casino, late breakfast. Zero pressure. Their trip begins properly tomorrow." },
+        { time: "🚗 Sisters · ~1:00 PM", title: "Back in Las Vegas by ~4:30 PM", body: "Reunite with parents. Quick dinner before the show. Gain the hour back crossing into NV." },
+        { time: "🎬 All together · Evening", title: "Wizard of Oz at the Sphere ✨", tone: "dark", body: "255 Sandy Ave · Reimagined immersive Wizard of Oz · 16K wraparound LED, 4D haptic seats, atmospheric effects · ~90 min · A genuinely once-in-a-lifetime visual experience to cap a huge day. <strong>Book tickets in advance.</strong>" },
+      ],
+    },
+    {
+      num: "03", title: "LV → Grand Canyon → Sedona",
+      date: "Monday, May 11", assignment: "Depart 9:00 AM · All together",
+      weather: { city: "Sedona, AZ", icon: "☀️", hi: 84, lo: 56, desc: "Sunny · Light wind" },
+      image: window.__resources.day3Img,
+      caption: "Grand Canyon · South Rim",
+      events: [
+        { time: "🚗 9:00 AM · I-40 East via Williams", title: "Grand Canyon South Rim (~4 hrs)", body: "Arrive ~1:00 PM. Pull into <strong>Mather Point</strong> — stand on the rim for 45–60 min. Paved, flat, fully accessible for Mom and Dad. Nothing prepares you for the scale of this place. Then continue south ~2 hrs to Sedona via SR-89A through Oak Creek Canyon." },
+        { time: "🏠 Sedona ~3:30 PM · then ~5:30 PM", title: "Airport Mesa Scenic Lookout", body: "538 Airport Rd, $3 parking. 360° panorama of Cathedral Rock, Bell Rock, Courthouse Butte. No hiking — accessible for all. Arrive 90 min before sunset." },
+        { time: "🍽️ Dinner", title: "Mariposa Latin Inspired Grill", tone: "dark", body: "700 W AZ-89A · Panoramic red rock terrace · Local sourcing · Book well in advance · $ <span class='tag'>VEG</span>" },
+      ],
+    },
+    {
+      num: "04", title: "Soldier Pass · Cathedral Rock Sunset",
+      date: "Tuesday, May 12", assignment: "Mixed day · All converge for sunset",
+      weather: { city: "Sedona, AZ", icon: "☀️", hi: 90, lo: 60, desc: "Hot · Golden hour magic" },
+      image: window.__resources.day4Img,
+      caption: "Palatki Heritage Site · Cathedral Rock",
+      events: [
+        { time: "🍵 Morning matcha", title: "Local Juicery", tone: "green", body: "3150 W State Rt 89A · Open 8 AM · Ceremonial grade organic matcha from Aichi, Japan · Queen Matcha smoothie or boosted matcha latte · Great breakfast for Kelli" },
+        { row: [
+          { time: "🥾 Sisters · 9:00 AM", title: "Soldier Pass Trail + Cave", stats: "4.5 mi loop · 800 ft · 2–3 hrs", body: "Devil's Kitchen → Seven Sacred Pools → steep cave spur. Only scramble up if confident. Back by 12:30 PM." },
+          { time: "👴👵 Parents", title: "Tlaquepaque Arts Village", tone: "par", body: "336 AZ-179. Flat, shaded courtyards, Secret Garden Cafe. A perfect slow morning." },
+        ]},
+        { time: "🏛️ All together · 1:30–4:00 PM", title: "Palatki Heritage Site", body: "Ancient Sinagua cliff dwellings and one of the largest pictograph sites in the Verde Valley. Reservation required (free), guided by Forest Service stewards. Short walk from the lot. Awe-inducing for Mom and Dad — and a perfect afternoon anchor before sunset." },
+        { time: "🌅 All together · ~6:30 PM", title: "Cathedral Rock Sunset + Crescent Moon Ranch", body: "Sisters hike to the saddle (1.2 mi, 741 ft, light scrambling — bring headlamps). Mom and Dad walk the flat path through Crescent Moon Ranch to Oak Creek. <strong>Dad can wade or swim here.</strong> Rocks turn blood-orange at golden hour." },
+        { time: "🍽️ Dinner", title: "Elote Cafe", tone: "dark", body: "350 Jordan Rd · 25 years Arizona local sourcing · Legendary elote · No reservations — arrive 25 min before 5 PM · Closed Mon/Sun · $ <span class='tag'>KELLI'S PICK</span>" },
+      ],
+    },
+    {
+      num: "05", title: "Choose your adventure",
+      date: "Wednesday, May 13", assignment: "Two options · Pick one the night before",
+      weather: { city: "Page or Petrified Forest, AZ", icon: "☀️", hi: 83, lo: 56, desc: "Clear · Light breeze" },
+      image: window.__resources.day5ImgA,
+      caption: "Page · Antelope Canyon",
+      image2: window.__resources.day5ImgB,
+      caption2: "Petrified Forest · Painted Desert",
+      events: [
+        { time: "✦ Option 1", title: "Page Day Trip · Antelope Canyon + Horseshoe Bend", tone: "plum", body: "The full bucket-list day. Long drive (~5 hrs round trip), early start, slot canyons + Colorado River from above. Big reward, big effort." },
+        { time: "🍵 On the way out", title: "Sedona Juice Co.", tone: "green", body: "6657 AZ-179, Village of Oak Creek · Open 8:30 AM · Right on your route south · Matcha Bliss with cashew milk, spirulina, ashwagandha" },
+        { time: "🚗 7:30 AM · SR-89A North", title: "Through Oak Creek Canyon → Flagstaff → US-89", body: "Pull over at Canyon Overlook (15 min). Arrive Page ~10:00 AM." },
+        { time: "🦕 ~9:30 AM near Tuba City", title: "Tuba City Dinosaur Tracks", body: "Real 200M-year-old Jurassic tracks in open rock. Free, flat, 30–45 min. Navajo guides — tip $10–20 for the group." },
+        { time: "📸 ~11:30 AM", title: "Upper Antelope Canyon Tour", body: "Navajo-guided slot canyon — narrow sandstone corridors with light beams from above. ~1 hr. Flat, accessible for Mom and Dad. <strong>Book today — May sells out weeks ahead.</strong> Antelope Canyon Tours by Carolene Ekis." },
+        { time: "🌊 ~2:30 PM", title: "Horseshoe Bend", body: "1001 Page Pkwy. Easy 1.5 mi RT walk. Colorado River horseshoe curve 1,000 ft below. Staggering scale. $10/car. Best in late afternoon light." },
+        { time: "🍽️ Dinner", title: "Sunset 89", tone: "dark", body: "724 US-89, Page · Above the Colorado River · Pacific Rim · Go at sunset · Reserve ahead · $ <span class='tag'>VEG</span>" },
+        { time: "🚗 Depart Page ~8:00 PM", title: "Back at Airbnb ~9:30 PM", body: "Long day — rest up. Tomorrow ends under the stars." },
+
+        { time: "✦ Option 2", title: "Petrified Forest National Park", tone: "plum", body: "A more relaxed day with a totally different landscape — technicolor badlands, ancient logs turned to crystal, and a Route 66 detour. Shorter day, home in time for sunset." },
+        { time: "🚗 8:00 AM · I-17 N then I-40 E (~2.5 hrs)", title: "Stop in Holbrook · Route 66 nostalgia", body: "Quick stop at the historic Wigwam Motel — one of the great Route 66 relics, perfect for a photo. Grab coffee and push on to the park, arriving ~10:30 AM." },
+        { time: "🪨 ~10:30 AM · North entrance", title: "Painted Desert Rim Trail", body: "Start at the Painted Desert Inn (a National Historic Landmark). Easy 0.5-mile paved rim trail with sweeping views across the technicolor badlands — purples, reds, ochres, and grays stretching to the horizon. Fully accessible, extraordinary." },
+        { time: "🌳 ~11:30 AM · Mid-park", title: "Blue Mesa Trail", stats: "1 mi loop · Moderate · Some uneven terrain", body: "Loop through otherworldly blue and purple bentonite hills studded with giant petrified logs. The most surreal landscape in the park — feels like another planet." },
+        { time: "🪵 ~1:00 PM · South section", title: "Crystal Forest + Giant Logs Trail", stats: "0.75 mi loop · Easy", body: "Short loop past enormous petrified logs — some 6 ft in diameter, shimmering with quartz crystal. The Giant Logs trail behind the Rainbow Forest Museum has the most spectacular specimens. Free with America the Beautiful Pass." },
+        { time: "🍽 Lunch · Rainbow Forest Museum area", title: "Picnic in the park", tone: "green", body: "Pack a lunch from Sedona — there's a picnic area near the south visitor center. No full restaurant in the park, so bring food or grab something in Holbrook on the way in." },
+        { time: "🚗 Depart ~3:00 PM · ~2.5 hrs back", title: "Back in Sedona ~5:30 PM", body: "A much more relaxed return than the Page option. Catch sunset at Airport Mesa on the way back into town." },
+      ],
+    },
+    {
+      num: "06", title: "Long Canyon · Broken Arrow · Jerome · Stargazing",
+      date: "Thursday, May 14", assignment: "Final full day · All converge for stars",
+      weather: { city: "Sedona, AZ", icon: "☀️", hi: 89, lo: 58, desc: "Hot afternoon · Cool evening" },
+      image: window.__resources.day6Img,
+      caption: "Sedona · Stargazing",
+      events: [
+        { time: "🍵 Morning matcha", title: "Local Juicery", tone: "green", body: "3150 W State Rt 89A · Open 8 AM · On the way to Boynton Pass Rd trailheads · Ceremonial matcha + breakfast bowls for the trail" },
+        { row: [
+          { time: "🥾 Sisters · 9:00 AM", title: "Long Canyon Petroglyphs + Rachel's Knoll", body: "Drive Boynton Pass Rd west (scenic). Flat canyon walk with Sinagua petroglyphs. Add Rachel's Knoll — peaceful hilltop with prayer flags. Done by 11:30 AM." },
+          { time: "🥾 Sisters · ~12:00 PM", title: "Broken Arrow Trail", stats: "2.8 mi RT · 400 ft · Moderate", body: "Ends at Chicken Point overlook. Alongside Pink Jeep route. Keep an eye out for BJ Rock 😏. Done by 2:00 PM." },
+        ]},
+        { time: "👴👵 Parents · slow start", title: "Bell Rock Trail or Airbnb porch", tone: "par", body: "Easy, spectacular, go as far as comfortable. Save energy for swimming and Jerome." },
+        { time: "💧 All together · ~2:00 PM", title: "Grasshopper Point Swimming", body: "2.5 miles north on SR-89A. Short flat walk (¼ mi). Calm Oak Creek pool, red rock terraces, cliff jumping for sisters, wading for Dad. $15/car. Bring snacks and linger." },
+        { time: "🏚️ All together · ~3:30 PM", title: "Jerome", body: "30 min west via SR-89A. Former copper boomtown at 5,000 ft — cooler than Sedona. Steep main street, galleries, Mine Museum, atmospheric bars. Allow 2.5–3 hrs." },
+        { time: "🍽️ Dinner", title: "Restaurant Forty1 at Ambiente", tone: "dark", body: "900 W AZ-89A · Two MICHELIN Keys · Verde Valley local sourcing · New spring 2026 menu · Dedicated vegan menu · Rooftop red rock views · Reserve on OpenTable now · $ <span class='tag'>VEGAN MENU</span>" },
+        { time: "🌌 After dark · All together", title: "Sedona Stargazing Tour", tone: "blue", body: "Evening Sky Tours (eveningskytours.com) or Viator · Professional astronomer, large telescopes, ~2 hrs · <strong>Bring warm layers — drops to 50°F</strong> · International Dark Sky Community · The magic moment of the entire trip." },
+      ],
+    },
+    {
+      num: "07", title: "Sedona → Flagstaff → Home",
+      date: "Friday, May 15", assignment: "Two departures · Parents 12:21 PM · Sisters 2 PM Vegas",
+      weather: { city: "Sedona, AZ", icon: "🌤️", hi: 85, lo: 58, desc: "Bittersweet · Beautiful" },
+      image: window.__resources.day7Img,
+      caption: "Sedona · last morning",
+      events: [
+        { time: "🍩 Before 9 AM or they sell out", title: "Sedonuts", body: "Red Rock Velvet, Red Rock Chocolate, organic coffee. Non-negotiable final morning treat." },
+        { row: [
+          { time: "👴👵 Parents · 9:30 AM", title: "Sedona → Flagstaff Pulliam Airport ✈️", tone: "par", body: "~45 min drive. Drop-off by 10:30 AM for the 12:21 PM flight. What a trip." },
+          { time: "✈️ Sisters · by 8:00 AM", title: "Drive to Las Vegas (~4.5 hrs)", body: "Sisters leave Sedona earlier. Arrive Harry Reid by 12:30 PM for 2 PM flights. ✅" },
+        ]},
+        { time: "💡", title: "Two separate departures", body: "Sisters head west to Vegas earlier, parents head east to Flagstaff later. Same Airbnb, two different farewells." },
+      ],
+    },
+  ],
+};
+
+</script>
+  <script type="text/babel" src="tweaks-panel.jsx"></script>
+  <script type="text/babel" src="app.jsx"></script>
+</body>
+</html>
