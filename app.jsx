@@ -525,7 +525,7 @@ function App() {
       <section className="section" id="days">
         <div className="section__eyebrow">The Days</div>
         <h2 className="section__title">Seven days, <em>one loop</em></h2>
-        <p className="section__intro">Sisters and parents on different schedules — but every evening converges. Each day has a journal at the bottom: drop a memory once it's lived.</p>
+        <p className="section__intro">Each day has a journal at the bottom: drop your memories at the end of the day.</p>
         <div className="days">
           {D.days.map(d => <Day key={d.num} d={d} />)}
         </div>
