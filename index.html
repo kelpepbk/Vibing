@@ -1,16 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kelli's AZ Trip</title>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/17.0.2/umd/react.production.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/17.0.2/umd/react-dom.production.min.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .trip-day { margin: 20px; padding: 20px; border: 1px solid #ccc; }
+    </style>
 </head>
 <body>
-    <div id="root"></div>
-    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script type="text/babel" src="app.jsx"></script>
+    <div id="app"></div>
+    <script>
+        const TRIP_DATA = {
+            day1: { title: 'Day 1: Arrival', activities: ['Flight to Phoenix', 'Check-in at Hotel', 'Dinner at a local restaurant'] },
+            day2: { title: 'Day 2: Sedona', activities: ['Jeep Tour', 'Explore Red Rocks', 'Dinner in Sedona'] },
+            day3: { title: 'Day 3: Grand Canyon', activities: ['Hiking', 'Sightseeing', 'Sunset Viewing'] },
+            day4: { title: 'Day 4: Antelope Canyon', activities: ['Guided Tour', 'Photography', 'Relaxation'] },
+            day5: { title: 'Day 5: Lake Powell', activities: ['Boating', 'Fishing', 'Swimming'] },
+            day6: { title: 'Day 6: Monument Valley', activities: ['Horseback Riding', 'Guided Tour', 'Star Gazing'] },
+            day7: { title: 'Day 7: Departure', activities: ['Final Breakfast', 'Check-out of Hotel', 'Flight Home'] }
+        };
+
+        function Trip() {
+            return (
+                <div>
+                    {Object.entries(TRIP_DATA).map(([day, details]) => (
+                        <div className="trip-day" key={day}>
+                            <h2>{details.title}</h2>
+                            <ul>
+                                {details.activities.map((activity, index) => <li key={index}>{activity}</li>)}
+                            </ul>
+                        </div>
+                    ))}
+                </div>
+            );
+        }
+
+        ReactDOM.render(<Trip />, document.getElementById('app'));
+    </script>
 </body>
 </html>
