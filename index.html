@@ -15,6 +15,13 @@
 <body>
   <div id="root"></div>
 
+  <!-- Supabase: replace these two values with your project credentials -->
+  <script>
+    window.SUPABASE_URL      = 'YOUR_SUPABASE_URL';
+    window.SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" crossorigin="anonymous"></script>
+
   <script>
     window.TWEAK_DEFAULTS = /*EDITMODE-BEGIN*/{
       "theme": "default",
