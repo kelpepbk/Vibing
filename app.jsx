@@ -529,7 +529,7 @@ function TopNav({ days }) {
       <nav className="topnav">
         <div className="topnav__inner">
           <a href="#top" className="topnav__brand">
-            Kelli's AZ Trip<small>May 9–15 · 2026</small>
+            AZ/UT 2026<small>May 9–15 · 2026</small>
           </a>
           <div className="topnav__links">
             <a href="#map" className={`topnav__link ${active === "map" ? "is-active" : ""}`}>Route</a>
