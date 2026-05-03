@@ -592,6 +592,7 @@ function App() {
       </div>
       <RouteMap route={D.route} path={D.routePath} />
       <Passage data={D.prologue} />
+      <Packing items={D.packing} />
       <section className="section" id="days">
         <div className="section__eyebrow">The Days</div>
         <h2 className="section__title">Seven days, <em>one loop</em></h2>
@@ -599,7 +600,6 @@ function App() {
           {D.days.map(d => <Day key={d.num} d={d} onAddMemory={openModal} />)}
         </div>
       </section>
-      <Packing items={D.packing} />
       <MemoriesSection days={D.days} refreshKey={refreshKey} />
       <Passage data={D.epilogue} />
       <footer className="footer">
