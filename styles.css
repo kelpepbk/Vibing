@@ -505,6 +505,7 @@ a { color: inherit; }
 @media (max-width: 880px) {
   .day { grid-template-columns: 1fr; }
   .day:nth-child(even) .day__media { order: 0; }
+  .day__media-wrap { position: relative; top: 0; }
   .day__media { position: relative; top: 0; aspect-ratio: 16/10; }
 }
 
